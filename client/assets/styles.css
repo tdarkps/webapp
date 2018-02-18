@@ -1,0 +1,104 @@
+.navbar-nav .active {
+    color: orangered !important;
+    border-bottom: 2px solid orange !important;
+}
+
+.caja-demo {
+    height: 150px;
+    width: 200px;
+    border: 1px solid salmon;
+}
+
+.btn_trancisiones {
+    border: 2px solid red;
+    border-radius: 20px;
+    background: lightcoral;
+    padding: 10px;
+    color: white;
+    transition: background 1s, border 2s, color 1s, border-radius 2s;
+    display: block;
+    width: 120px;
+    text-align: center;
+}
+
+.btn_trancisiones:hover {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border-color: brown;
+    background: #ccc;
+    border-radius: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    transition: all 300ms;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    transition: all 300ms;
+    border-bottom: 2px solid orange;
+}
+
+.caja_animada {
+    background: green;
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    margin-top: 15px;
+    /*
+    animation-name: deslizamiento;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    */
+}
+
+@keyframes deslizamiento {
+    0% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: 400px;
+        background: red;
+    }
+    50% {
+        border-radius: 50%;
+    }
+    75% {
+        margin-left: 0px;
+        background: yellow;
+        border-radius: 0%;
+    }
+    100% {
+        background: green;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.image_for_edit img {
+    width: 60px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.animal-head-card img {
+    width: 100%;
+}
+
+.animal-item img {
+    min-height: 200px;
+}
